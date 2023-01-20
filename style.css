@@ -1,0 +1,750 @@
+@font-face {
+    src: url("./fonts/Lato-Regular.ttf");
+	font-family: "Lato";
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    max-width: 1920px;
+    max-height: 1733px;
+    background: #FFFFFF;
+}
+
+h1, h2, h3, h4, p, button, a, label {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+}
+
+label {
+    display: none;
+}
+
+.input-btn {
+    display: none;
+}
+
+.header {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0;
+    width: 1200px;
+    height: 297px;
+}
+
+.header-text {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.header-disposition {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #333E50;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    width: 800px;
+    height: 96px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333E50;
+    margin-bottom: 20px;
+}
+
+.header-img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 247px;
+}
+
+.header-img-diagram {
+    width: 111px;
+    height: 100px;
+}
+
+.header-img-line {
+    width: 120px;
+    height: 10px;
+}
+
+.header-input {
+    width: 1200px;
+    height: 45px;
+    background: #F1F4F7;
+    border: 1px solid #DADEE2;
+    border-radius: 3px;
+    padding-left: 40px;
+}
+
+.header-input:focus {
+    background: #FFFFFF;
+    border: 1px solid #9299A2;;
+    border-radius: 3px;
+}
+
+.header-input-search {
+    position: absolute;
+    display: block;
+    margin-top: -30px;
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;   
+}
+
+.section-main {
+    margin: 0 auto;
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+.main-title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333E50;
+}
+
+.main-flex {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.main-stock {
+    box-sizing: border-box;
+    display: block;
+    width: 688px;
+    background: #FFFFFF;
+    border: 1px solid #E8ECEF;
+    border-radius: 5px;
+    margin: 0;
+    padding: 30px 0 30px 30px;
+    margin-bottom: 30px;
+}
+
+.main-stock-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 30px;
+    color: #333E50;
+}
+
+.main-stock-subtitle {
+    font-size: 16px;
+    line-height: 150%;
+    color: #333E50;
+    margin: 0;
+    margin-bottom: 45px;
+}
+
+.main-stock-btn {
+    margin: 0;
+    width: 158px;
+    height: 45px;
+    background-color: #95CE5A;
+    box-shadow: 0px 5px 10px rgb(149 206 90 / 40%);
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.main-stock-btn:hover {
+    background-color: #8CC459;
+    color: #FFFFFF;
+}
+
+.main-stock-btn:focus {
+    background: #95CE5A;
+    border: 1px solid #333E50;
+    box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
+    border-radius: 5px;
+    color: #333E50;
+}
+
+.main-stock-btn:disabled {
+    background: #ADB4BF;
+    color: #FFFFFF;
+}
+
+.main-stock-img {
+    width: 180px;
+    height: 180px;
+    margin-left: -180px;
+    margin-top: 35px;
+}
+
+.main-bonds {
+    box-sizing: border-box;
+    width: 482px;
+    background: #FFFFFF;
+    border: 1px solid #E8ECEF;
+    border-radius: 5px;
+    margin: 0;
+    padding: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.main-dividends {
+    box-sizing: border-box;
+    width: 482px;
+    background: #FFFFFF;
+    border: 1px solid #E8ECEF;
+    border-radius: 5px;
+    margin: 0;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.main-check {
+    box-sizing: border-box;
+    display: block;
+    width: 688px;
+    background: #FFFFFF;
+    border: 1px solid #E8ECEF;
+    border-radius: 5px;
+    margin: 0;
+    padding: 30px 0 30px 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.main-check:hover, .main-dividends:hover, .main-bonds:hover, .main-stock:hover, .main-broker:hover, .main-education:hover {
+    box-shadow: 0px 5px 20px rgba(51, 62, 80, 0.15);
+}
+
+.btn-white {
+    background-color:#FFFFFF;
+    color: #333E50;
+}
+
+.btn-white:hover {
+    background: #FFFFFF;
+    border: 1px solid #333E50;
+    color: #333E50;
+}
+
+.btn-white:focus {
+    background: #FFFFFF;
+    border: 1px solid #333E50;
+    color: #333E50;
+}
+
+.btn-white:disabled {
+    background: #FFFFFF;
+    border: 1px solid #DADEE2;
+    color: #ADB4BF;
+}
+
+.main-broker {
+    box-sizing: border-box;
+    width: 585px;
+    background: #FFFFFF;
+    border: 1px solid #E8ECEF;
+    border-radius: 5px;
+    margin: 0;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.main-education {
+    box-sizing: border-box;
+    width: 585px;
+    background: #FFFFFF;
+    border: 1px solid #E8ECEF;
+    border-radius: 5px;
+    margin: 0;
+    padding: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.main-select {
+    box-sizing: border-box;
+    width: 86px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #E8ECEF;
+    border-radius: 3px;
+}
+
+.tabs {
+    box-sizing: border-box;
+    font-size: 0;
+    max-width: 524px;
+    margin: 0;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>div {
+    display: none;
+    border-top: 1px solid #E8ECEF;
+    font-size: 14px;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2 {
+    display: block;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    margin-right: 30px;
+    padding-bottom: 8px;
+    color: #ADB4BF;   
+}
+
+.tabs>label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+    background-color: #fff;
+    border-bottom: 1px solid #95CE5A;
+    color: #333E50;
+}
+
+.tabs-title {
+    font-size: 14px;
+    line-height: 20px; 
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;  
+    margin: 0;
+    padding: 0;
+}
+
+.tabs-not-active {
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ADB4BF;
+}
+
+.tabs-grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 61px 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item-start {
+    box-sizing: border-box;
+    text-align: start;
+    border-bottom: 1px solid #E8ECEF;
+    padding-bottom: 12px;
+}
+
+.grid-item-end {
+    box-sizing: border-box;
+    text-align: end;
+    border-bottom: 1px solid #E8ECEF;
+    padding-bottom: 12px;
+}
+
+.tabs-subtitle {
+    font-size: 12px;
+    line-height: 15px;  
+    color: #9299A2;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.tabs-content-title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    color: #388EC3;
+    position: relative;
+    left: 10px;
+}
+
+.tabs-content-title::before {
+    content:  url("./icon/icon-vtb.svg");
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 15px;
+    left: -10px;
+}
+
+.tabs-content-title-nologo::before {
+    content:  url("./icon/no-logo.svg");
+}
+
+.tabs-content-title-disney::before {
+    content:  url("./icon/logo-disney.svg");
+}
+
+.tabs-content-title-gazp::before {
+    content:  url("./icon/logo-gazp.svg");
+}
+
+.tabs-content-title-cisco::before {
+    content:  url("./icon/logo-cisco.svg");
+}
+
+.tabs-content-subtitle {
+    font-size: 12px;
+    line-height: 15px;
+    color: #9299A2;
+    position: relative;
+    left: 40px;
+    margin: 0;  
+    padding: 0;
+}
+
+.tabs-content-price {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333E50;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs-content-change-green {
+    font-size: 14px;
+    line-height: 20px;
+    color: #7FC03C;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs-content-change-red {
+    color: #ED2C35;
+}
+
+.arrow-up {
+    margin-top: 10px;
+}
+
+.arrow-up::before {
+    content:  '\2191';
+    width: 10px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;
+}
+
+.arrow-down {
+    margin-top: 10px;
+}
+
+.arrow-down::before {
+    content:  '\2193';
+    width: 10px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;
+}
+
+.tabs-content-link {
+    margin-top: 23px;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #388EC3;
+    margin: 0;  
+    padding: 0;
+    text-decoration: none;
+}
+
+.link:focus {
+    color: #95CE5A;
+}
+
+.link::after {
+    content:  url("./icon/arrow-right.svg");
+    width: 4.28px;
+    height: 7.5px;
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+}
+
+.tabs-content-updated {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ADB4BF;
+    margin: 0;
+    padding: 0;
+    margin-top: 23px;
+}
+
+.calendar-text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #9299A2;
+    padding: 0;
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid #E8ECEF;
+    padding-bottom: 12px;
+}
+
+.calendar-wrapper-grid {
+    display: grid;
+    grid-template-columns: 55px 35px 25px auto;
+    grid-auto-rows: auto;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #E8ECEF;
+}
+
+.calendar-time-red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333E50;
+    padding: 3px 5px;
+    width: 41px;
+    height: 21px;
+    background: #FFE6E7;
+    border-radius: 50px;
+    margin: 0;
+}
+
+.calendar-time {
+    border: none;
+    background: #FFFFFF;
+}
+
+.calendar-flag-rus {
+    display: block;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.calendar-dot-red {
+    display: block;
+    margin: auto;
+    width: 5px;
+    height: 5px;
+}
+
+.calendar-wrapper-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333E50;
+}
+
+.calendar-link {
+    margin-top: 39px;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        box-sizing: border-box;
+        width: 360px;
+        background: #FFFFFF;
+        margin: 0 auto;
+    }
+
+    br {
+        display: none;
+    }
+
+    .header {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 0 15px;
+        height: auto;
+        width: 330px;
+        border-bottom: 1px solid #E8ECEF;
+    }
+    
+    .header-text {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header-disposition {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-mobile {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    
+    .header-title {
+        width: 252px;
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .wrapper-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .xpandable-block {
+        display: flex;
+        height: 70px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        order: 0;
+    }
+
+    .xpand-button {
+        display: flex;
+        order: 1;
+    }
+
+    input[type="checkbox"] {
+       display: none;
+    }
+
+    input[type="checkbox"]:checked + .xpandable-block {
+        height: auto;
+    }
+
+    label {
+        display: flex;
+        order: 1;
+        color: #388EC3;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 20px 0;
+    }
+
+    label::after {
+        content:  url("./icon/arrow-expand.svg");
+        width: 4.28px;
+        height: 7.5px;
+        margin-left: 6.25px;
+    }
+      
+    .header-subtitle {
+        width: 240px;
+        height: auto;
+        margin: 0;
+    }
+      
+    .header-img {
+        display: none;
+    }
+
+    .header-input {
+        width: 330px;
+        height: 45px;
+        margin-bottom: 30px;
+    }
+    
+    .main-flex {
+        display: block;
+    }
+
+    .main-check, .main-dividends, .main-bonds, .main-stock, .main-broker, .main-education {
+        width: 330px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .section-main {
+        width: 330px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .flex-mobile {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .main-stock-img {
+        width: 110px;
+        height: 110px;
+        margin-left: -110px;
+        margin-top: 125px;
+    }
+
+    .main-stock-subtitle {
+        width: 245px;
+        margin-bottom: 20px;
+    }
+    
+    .main-stock-title {
+        margin-bottom: 15px;
+    }
+
+    .mobile-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .header-input-search {
+        margin-top: -60px;
+    }
+
+    .grid-item-start {
+        box-sizing: border-box;
+        text-align: start;
+        border-bottom: 1px solid #E8ECEF;
+        padding-bottom: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

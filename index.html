@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-disposition">
+            <div class="header-text">
+                <h1 class="header-title">Облигации в России</h1>
+                <div class="wrapper-mobile">
+                    <label for="button">Показать весь</label>
+                    <input type="checkbox" id="button" class="input-btn">
+                    <div class="xpandable-block">
+                        <p class="header-subtitle">Облигации федерального, субфедерального займа, еврооблигации и облигации самых известных компаний России. Изучайте стоимость облигаций и ее изменение, доходность, купонные выплаты и многие другие показатели. Чтобы узнать больше про облигации и инвестирование в ценные бумаги, посетите наш образовательный раздел с множеством полезной информации.</p>
+                    </div>                   
+                </div>               
+            </div>
+            <div class="header-img">
+                <img class="header-img-diagram" src="./icon/diagram-header.svg" alt="diagram">
+                <img class="header-img-line" src="./icon/line-header.svg" alt="line">
+            </div>
+        </div>       
+        <input class="header-input" type="search" placeholder="Название или тикер">
+        <img class="header-input-search" src="./icon/icon-search.svg" alt="search">
+    </header>
+    <main>
+        <section class="section-main">
+            <h2 class="main-title">Все об инвестициях</h2>
+            <div class="main-flex">
+                <div class="main-flex flex-mobile">
+                    <div class="main-stock">
+                        <h3 class="main-stock-title"> Акции</h3>
+                        <p class="main-stock-subtitle">Покупка акций российских и мировых компаний</p>
+                        <button class="main-stock-btn">Купить</button>
+                    </div>
+                    <div>
+                        <img class="main-stock-img" src="./image/img_akcii2.png">
+                    </div>
+                </div>                    
+                <div class="main-bonds">
+                    <h3 class="main-stock-title">Облигации</h3>
+                    <p class="main-stock-subtitle">Инвестируйте в ценные бумаги и зарабатывацте на <br> процентах</p>
+                    <button class="main-stock-btn">Подобрать</button>
+                </div>
+            </div>
+            <div class="main-flex">
+                <div class="main-dividends">
+                    <h3 class="main-stock-title">Дивиденты</h3>
+                    <p class="main-stock-subtitle">Размер дивидентов и даты выплат на календаре</p>
+                    <button class="main-stock-btn btn-white">Подробнее</button>
+                </div>
+                <div class="main-flex flex-mobile">
+                    <div class="main-check">
+                        <h3 class="main-stock-title"> Индивидуальный инвестиционный счет</h3>
+                        <p class="main-stock-subtitle">Откройте счет и увеличивайте доходность своих инвестиций</p>
+                        <button class="main-stock-btn">Открыть ИИС</button>
+                    </div>
+                    <div>
+                        <img class="main-stock-img" src="./image/case_blue_2 1.png" alt="case blue">
+                    </div>
+                </div>  
+            </div>
+            <div class="main-flex">
+                <div class="main-flex flex-mobile">
+                    <div class="main-broker">
+                        <h3 class="main-stock-title"> Брокеры</h3>
+                        <p class="main-stock-subtitle">Инвестируйте вместе с профессионалами.</p>
+                        <button class="main-stock-btn btn-white">Выбрать</button>
+                    </div>
+                    <div>
+                        <img class="main-stock-img" src="./image/img_brokers.png" alt="brokers">
+                    </div>
+                </div>                    
+                <div class="main-education">
+                    <h3 class="main-stock-title">Обучение</h3>
+                    <p class="main-stock-subtitle">Учитесь инвестировать БЕСПЛАТНО вместе с Банкирос</p>
+                    <button class="main-stock-btn btn-white">Пройти обучени</button>
+                </div>
+            </div>
+            <div class="main-flex">
+                <div class="main-broker">
+                    <div class="main-flex flex-mobile">
+                        <h3 class="main-stock-title"> Акции</h3>
+                        <select class="main-select" name="day">
+                            <option value="1">1 день</option>
+                            <option value="2">2 день</option>
+                            <option value="3">3 день</option>
+                            <option value="4">4 день</option>
+                            <option value="5">5 день</option>
+                            <option value="6">6 день</option>
+                            <option value="1">7 день</option>
+                        </select>
+                    </div>
+                    <div class="tabs">
+                        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                        <label class="tabs-title" for="tab-btn-1">Лидеры роста</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                        <label class="tabs-not-active" for="tab-btn-2">Tab inactive</label>                    
+                        <div id="content-1">
+                            <div class="tabs-grid">
+                                <p class="grid-item-start tabs-subtitle">Тикер</p>
+                                <p class="grid-item-start tabs-subtitle">Посл. цена</p>
+                                <p class="grid-item-end tabs-subtitle">Изм.</p>
+                                <div class="grid-item-start">
+                                    <h3 class="tabs-content-title">ВТБ банк</h3>                                            
+                                    <p class="tabs-content-subtitle">VTBR</p>
+                                </div>
+                                <h3 class="grid-item-start tabs-content-price">18.24 ₽</h3>
+                                <div class="grid-item-end">
+                                    <h3 class="tabs-content-change-green arrow-up">138.75 %</h3>
+                                    <h3 class="tabs-content-change-green">4.90 ₽</h3>
+                                </div>
+                                <div class="grid-item-start">
+                                    <h3 class="tabs-content-title tabs-content-title-nologo">Пао "Русгидро"</h3>                                            
+                                    <p class="tabs-content-subtitle">HYDR</p>
+                                </div>
+                                <h3 class="grid-item-start tabs-content-price">4.90 ₽</h3>
+                                <div class="grid-item-end">
+                                    <h3 class="tabs-content-change-green arrow-up">138.75 %</h3>
+                                    <h3 class="tabs-content-change-green">4.90 ₽</h3>
+                                </div>
+                                <div class="grid-item-start">
+                                    <h3 class="tabs-content-title tabs-content-title-disney">The Walt Disney Company</h3>                                            
+                                    <p class="tabs-content-subtitle">DIS-RM</p>
+                                </div>
+                                <h3 class="grid-item-start tabs-content-price">54.23 $</h3>
+                                <div class="grid-item-end">
+                                    <h3 class="tabs-content-change-green tabs-content-change-red arrow-down">138.75 %</h3>
+                                    <h3 class="tabs-content-change-green tabs-content-change-red">4.90 ₽</h3>
+                                </div>
+                                <div class="grid-item-start">
+                                    <h3 class="tabs-content-title tabs-content-title-gazp">Газпром</h3>                                            
+                                    <p class="tabs-content-subtitle">GAZP</p>
+                                </div>
+                                <h3 class="grid-item-start tabs-content-price">14.36 ₽</h3>
+                                <div class="grid-item-end">
+                                    <h3 class="tabs-content-change-green tabs-content-change-red arrow-down">138.75 %</h3>
+                                    <h3 class="tabs-content-change-green tabs-content-change-red">4.90 ₽</h3>
+                                </div>
+                                <div class="grid-item-start">
+                                    <h3 class="tabs-content-title tabs-content-title-nologo">The Walt Disney Company</h3>                                            
+                                    <p class="tabs-content-subtitle">DIS-RM</p>
+                                </div>
+                                <h3 class="grid-item-start tabs-content-price">9.24 ₽</h3>
+                                <div class="grid-item-end">
+                                    <h3 class="tabs-content-change-green arrow-up">138.75 %</h3>
+                                    <h3 class="tabs-content-change-green">4.90 ₽</h3>
+                                </div>
+                                <div class="grid-item-start">
+                                    <h3 class="tabs-content-title tabs-content-title-cisco">Cisco Systems, Inc.</h3>                                            
+                                    <p class="tabs-content-subtitle">CSCO-RM</p>
+                                </div>
+                                <h3 class="grid-item-start tabs-content-price">18.24 $</h3>
+                                <div class="grid-item-end">
+                                    <h3 class="tabs-content-change-green arrow-up">138.75 %</h3>
+                                    <h3 class="tabs-content-change-green">4.90 ₽</h3>
+                                </div>
+                            </div>
+                            <div class="main-flex mobile-reverse">
+                                <div class="tabs-content-link">
+                                    <a href="" class="link">Больше лидеров роста </a>
+                                </div>
+                                <h3 class="tabs-content-updated">Обновлено в 12:30</h3>
+                            </div>
+                        </div>
+                        <div id="content-2">
+                          Содержимое 2...
+                        </div>                    
+                    </div>
+                </div>                  
+                <div class="main-education">
+                    <h3 class="main-stock-title">Экономический календарь</h3>
+                    <h4 class="calendar-text">Ноябрь 17</h4>
+                    <div class="calendar-wrapper-grid">
+                        <p class="calendar-time-red">13:00</p>
+                        <img src="./icon/flag-rus.svg" class="calendar-flag-rus">
+                        <img src="./icon/dot-red.svg" class="calendar-dot-red">
+                        <h3 class="calendar-wrapper-title">Индекс цен на продовольствие</h3>
+                    </div>
+                    <div class="calendar-wrapper-grid">
+                        <p class="calendar-time-red">13:00</p>
+                        <img src="./icon/flag-rus.svg" class="calendar-flag-rus">
+                        <img src="./icon/dot-red.svg" class="calendar-dot-red">
+                        <h3 class="calendar-wrapper-title">Employment Overall Flash</h3>
+                    </div>
+                    <div class="calendar-wrapper-grid">
+                        <p class="calendar-time calendar-time-red">16:45</p>
+                        <img src="./icon/flag-usa.svg" class="calendar-flag-rus">
+                        <img src="./icon/dot-orange.svg" class="calendar-dot-red">
+                        <h3 class="calendar-wrapper-title">Изменение занятости (кв/кв)</h3>
+                    </div>
+                    <div class="calendar-wrapper-grid">
+                        <p class="calendar-time calendar-time-red">23:15</p>
+                        <img src="./icon/flag-usa.svg" class="calendar-flag-rus">
+                        <img src="./icon/dot-orange.svg" class="calendar-dot-red">
+                        <h3 class="calendar-wrapper-title">Изменение занятости (кв/кв), ИПЦ Франции, базовый индекс цен производителей (PPI) (г/г) (окт)</h3>
+                    </div>            
+                    <h4 class="calendar-text">Ноябрь 18</h4>
+                    <div class="calendar-wrapper-grid">
+                        <p class="calendar-time calendar-time-red">09:00</p>
+                        <img src="./icon/flag-usa.svg" class="calendar-flag-rus">
+                        <img src="./icon/dot-orange.svg" class="calendar-dot-red">
+                        <h3 class="calendar-wrapper-title">ИПЦ Франции</h3>
+                    </div>   
+                    <div class="calendar-wrapper-grid">
+                        <p class="calendar-time calendar-time-red">14:40</p>
+                        <img src="./icon/flag-rus.svg" class="calendar-flag-rus">
+                        <img src="./icon/dot-red.svg" class="calendar-dot-red">
+                        <h3 class="calendar-wrapper-title">PPI exFood/Energy MM</h3>
+                    </div> 
+                    <div class="calendar-wrapper-grid">
+                        <p class="calendar-time calendar-time-red">16:45</p>
+                        <img src="./icon/flag-rus.svg" class="calendar-flag-rus">
+                        <img src="./icon/dot-green.svg" class="calendar-dot-red">
+                        <h3 class="calendar-wrapper-title">Речь члена FOMC Уильямса</h3>
+                    </div> 
+                    <div class="calendar-wrapper-grid">
+                        <p class="calendar-time calendar-time-red">16:45</p>
+                        <img src="./icon/flag-usa.svg" class="calendar-flag-rus">
+                        <img src="./icon/dot-orange.svg" class="calendar-dot-red">
+                        <h3 class="calendar-wrapper-title">Базовый индекс цен производителей (PPI) (г/г) (окт)</h3>
+                    </div> 
+                    <div class="calendar-link">
+                        <a href="" class="link">Больше событий</a>
+                    </div>
+                </div>
+            </div>        
+        </section>        
+    </main>    
+</body>
+</html>
